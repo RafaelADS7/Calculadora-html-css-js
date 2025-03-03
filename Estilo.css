@@ -1,0 +1,45 @@
+/* Contêiner principal */
+.container {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    justify-content: center; /* Centraliza o conteúdo horizontalmente */
+    align-items: center; /* Alinha o conteúdo verticalmente */
+    flex-direction: column; /* Organiza o conteúdo em uma coluna */
+}
+
+.resultados {
+    width: 25%;
+    height: 20%;
+    background-color: rgb(221, 206, 206);
+    border-top-left-radius: 20%; /* Canto superior esquerdo arredondado */
+    border-top-right-radius: 20%; /* Canto superior direito arredondado */
+    border-bottom-left-radius: 20%; /* Canto inferior esquerdo reto */
+    border-bottom-right-radius: 20%; /* Canto inferior direito reto */
+    justify-content: flex-end; /* Alinha os itens à direita (final do eixo principal) */
+    align-items: flex-end; /* Alinha os itens na parte inferior (final do eixo transversal) */
+    display: flex;
+    font-size: 200%;
+    margin-bottom: 1%;
+}
+
+.primeira, .segunda, .terceira, .resto {
+    width: 25%;
+    height: 12%;
+    background-color: rgb(221, 206, 206);
+    display: flex;
+    flex-direction: row;
+}
+
+button {
+    width: 80%;
+    height: 99%;
+    gap: 5%; /* Espaçamento de 10px entre os botões */
+    border-radius: 45%;
+    font-size: 200%;
+    cursor: pointer;
+}
+
+.botoes_laranja {
+    background-color: rgb(255, 136, 0);
+}
