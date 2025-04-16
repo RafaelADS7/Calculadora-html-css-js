@@ -1,45 +1,99 @@
+
+
 /* Contêiner principal */
-.container {
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
     display: flex;
     width: 100%;
     height: 100vh;
     justify-content: center; /* Centraliza o conteúdo horizontalmente */
     align-items: center; /* Alinha o conteúdo verticalmente */
-    flex-direction: column; /* Organiza o conteúdo em uma coluna */
 }
-
-.resultados {
-    width: 25%;
-    height: 20%;
-    background-color: rgb(221, 206, 206);
-    border-top-left-radius: 20%; /* Canto superior esquerdo arredondado */
-    border-top-right-radius: 20%; /* Canto superior direito arredondado */
-    border-bottom-left-radius: 20%; /* Canto inferior esquerdo reto */
-    border-bottom-right-radius: 20%; /* Canto inferior direito reto */
-    justify-content: flex-end; /* Alinha os itens à direita (final do eixo principal) */
-    align-items: flex-end; /* Alinha os itens na parte inferior (final do eixo transversal) */
+.container {
+    background-color: black;
     display: flex;
-    font-size: 200%;
-    margin-bottom: 1%;
+    width: 20%;
+    height: 70%;
+    flex-direction: column;
+    border: 4px solid #D9D9D9;
+    border-radius: 35px;
 }
 
-.primeira, .segunda, .terceira, .resto {
-    width: 25%;
-    height: 12%;
-    background-color: rgb(221, 206, 206);
+header {
+    background-color: black;
+    width: 100%;
+    height: 30%;
+    display: flex;
+    border-radius: 35px;
+    color: white;
+    align-items: end;
+    justify-content: right;
+}
+
+input {
+    margin: 10%;
+    background-color: black;
+    color: white;
+    border: none;
+    text-align: right;
+}
+
+main {
+    width: 100%;
+    height: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1%;
+}
+
+.bloco_botoes {
+    width: 90%;
+    height: 20%;
     display: flex;
     flex-direction: row;
+    justify-content: space-evenly;
+    gap: 5%;
+    
 }
 
 button {
-    width: 80%;
-    height: 99%;
-    gap: 5%; /* Espaçamento de 10px entre os botões */
-    border-radius: 45%;
-    font-size: 200%;
+    width: 50%;
+    height: 90%;
+    border-radius: 50px;
+    border: none;
     cursor: pointer;
 }
 
-.botoes_laranja {
-    background-color: rgb(255, 136, 0);
+.bloco_botoes_inferior {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    height: 25%;
+    gap: 3%;
+}
+
+.botao_0 {
+    width: 60%;
+    height: 70%;
+}
+
+.botao_inferiores {
+    width: 25%;
+    height: 65%;
+}
+
+#cinzas {
+    background-color: #7c6c6c;
+}
+
+#amarelo {
+    background-color: rgb(197, 197, 52);
 }
