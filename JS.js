@@ -1,33 +1,18 @@
-let resultados = document.getElementById("resultados")
-let currentInput = ""
-let currentOperator = ""
 
-function appendNumber(value) {
-    currentInput += value;
-    resultados.textContent = currentInput;
+
+function adicionar(valor) {
+    document.getElementById('display').value += valor;
+} 
+
+function limpar() {
+    document.getElementById('display').value = '';
 }
 
-function appendOperator(operator) {
-    currentInput += operator;
-    resultados.textContent = currentInput;
+function operadores(operador) {
+    document.getElementById('display').value += operador;
 }
 
-function calculadora() {
-    try {
-        let result = eval(currentInput)
-        if (!Number.isInteger(result)) {
-            result = result.toFixed(2)
-        }
-        currentInput = result
-        resultados.textContent = currentInput;
-    } catch(error) {
-        resultados.textContent = "erro";
-        currentInput = "";
-    }
-}
-
-function clear() {
-    console.log("Função Clear foi chamada")
-    currentInput = "";
-    resultados.textContent = "";
+function calcular() {
+    let resultado = eval(document.getElementById('display').value);
+    document.getElementById('display').value = resultado;
 }
